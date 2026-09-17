@@ -68,3 +68,45 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Backend
+backend/vendor/
+backend/node_modules/
+backend/storage/logs/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/bootstrap/cache/*.php
+backend/database/*.sqlite
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Python / ML
+ml/.venv/
+ml/.pytest_cache/
+ml/.mypy_cache/
+ml/.ruff_cache/
+ml/**/__pycache__/
+ml/**/*.pyc
+
+# ML datasets and generated artifacts (never commit person-level raw data)
+ml/data/raw/
+ml/data/intermediate/
+ml/data/processed/
+ml/artifacts/
+
+# Coverage / reports
+coverage/
+*.coverage
